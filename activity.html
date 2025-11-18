@@ -128,7 +128,7 @@
     let colors; 
 
     function plot_contour(fileNumber) {
-        d3.json("./dicomData/" + fileNumber).then(data => {
+        d3.json("https://boingocdinh.github.io/BoiDinh_Acitivity6-2-/dicomdata/" + fileNumber).then(data => {
             d3.select("svg").selectAll("*").remove();
             
             let m = 256, n = 256;
